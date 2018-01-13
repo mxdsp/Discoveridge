@@ -36,7 +36,7 @@ export default class Login extends Component<{}> {
     _login() {
       firebase.auth().signInWithEmailAndPassword(this.state.email, this.state.password)
       .then(function() {
-        Actions.people()
+				Actions.people()
       })
       .catch(function(e) {
         alert(e)

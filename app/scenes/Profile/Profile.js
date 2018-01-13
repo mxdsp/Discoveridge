@@ -36,7 +36,7 @@ export default class Profile extends Component<{}> {
     }
 
     _logout() {
-      firebaseRef.auth().signOut().then(function() {
+			firebaseRef.auth().signOut().then(function() {
         Actions.login()
       }).catch(function(e) {
         alert(e)

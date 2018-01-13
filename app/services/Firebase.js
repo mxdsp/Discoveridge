@@ -7,8 +7,9 @@ var config = {
   projectId: "discoveridge-ae18e",
   storageBucket: "discoveridge-ae18e.appspot.com",
   messagingSenderId: "54894293236"
-};
-export const firebaseRef = firebase.initializeApp(config);
+}
+
+export const firebaseRef = firebase.initializeApp(config)
 
 // export default class Firebase {
 

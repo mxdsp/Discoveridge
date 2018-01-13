@@ -14,6 +14,7 @@ import _ from 'lodash'
 import { firebaseRef } from '../../services/Firebase'
 import { styles } from './styles'
 import { Actions } from 'react-native-router-flux'
+
 export default class Register extends Component<{}> {
     constructor(props) {
       super(props)
@@ -60,26 +61,6 @@ export default class Register extends Component<{}> {
               onChangeText={(text) => this.setState({email: text})}
               value={this.state.email}
               placeholder="EMAIL"
-              placeholderTextColor="black"
-              autoCorrect={false}
-              autoCapitalize="none"
-              returnKeyType="next"
-            />
-            <TextInput 
-              style={styles.textInput} 
-              onChangeText={(text) => this.setState({firstName: text})}
-              value={this.state.firstName}
-              placeholder="FIRST NAME"
-              placeholderTextColor="black"
-              autoCorrect={false}
-              autoCapitalize="none"
-              returnKeyType="next"
-            />
-            <TextInput 
-              style={styles.textInput} 
-              onChangeText={(text) => this.setState({lastName: text})}
-              value={this.state.lastName}
-              placeholder="LAST NAME"
               placeholderTextColor="black"
               autoCorrect={false}
               autoCapitalize="none"
